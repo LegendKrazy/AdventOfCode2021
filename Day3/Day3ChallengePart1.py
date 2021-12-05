@@ -1,11 +1,8 @@
 from collections import Counter
 
-# Advent of Code 2021 Day 3 Part 1
-# The first parameter to check is the power consumption.
-# Use the binary numbers in the diagnostic report to generate two new binary numbers (gamma rate and epsilon rate).
-# The power consumption = gamma rate * epsilon rate.
-# Each bit in the gamma rate can be determined by finding the most common bit in the corresponding position of all numbers
-# in the diagnostic report.
+# Advent of Code 2021 Day 3 Part 1 Use the binary numbers in the diagnostic report to generate two new binary numbers
+# (gamma rate and epsilon rate). Power consumption = gamma rate * epsilon rate. Each bit in the gamma rate can be
+# determined by finding the most common bit in the corresponding position of all numbers in the diagnostic report.
 binarylist = []
 with open("Day3Input.txt") as file:
     while line := file.readline().rstrip():
